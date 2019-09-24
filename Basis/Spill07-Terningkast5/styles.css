@@ -1,0 +1,53 @@
+.meldingTilSpillere {
+    width: 450px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.button1 {
+    padding: 10px;
+    text-aligh: center;
+    width: 450px;
+}
+
+.terning {
+    border: 1px solid black;
+    width: 90px;
+    height: 95px;
+    padding: 2x;
+    border-radius: 10px;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+}
+
+.boksSpiller {
+    dispaly: inline-block;
+    float: left;
+    width: 211px;
+    height: 150px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.skrift1 {
+    dispaly: inline-block;
+    font-family: cursiv;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+

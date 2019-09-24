@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Oriented Programming</title>
+
+    <script>
+
+        function Box(width, length, height) {
+            function volume(a, b, c) {
+                return a * b * c;
+            }
+
+            this.boxVolume = volume(width, length, height);
+
+            this.showInfo = function () {
+
+                alert(this.width);
+            }
+
+
+        }
+
+        var crate = new Box(5, 4, 3);
+        alert("Volume = " + crate.boxVolume); // works correctly
+        //            alert(volume(5,4,3)); // fails as function volume() is invisible
+
+
+    </script>
+
+</head>
+<body>
+<input type="button" value="Show box volume" onclick="crate.boxVolume"/>
+
+<input type="button" value="Show box info" onclick="crate.showInfo"/>
+
+</body>
+</html>

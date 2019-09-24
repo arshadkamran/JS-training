@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Terningkast - basis</title>
+    <STYLE>
+        #spiller1, #spiller2 {
+            display: inline-block;
+            width: 200px;
+            height: 140px;
+            border: 1px;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 25px;
+            text-align: center;
+            font-size: 7em;
+        }
+
+        .output {
+            width: 250px;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+
+        button {
+            padding: 10px;
+            text-aligh: center;
+            width: 250px;
+        }
+
+        .terning {
+            border: 1px solid black;
+            width: 105px;
+            height: 105px;
+            padding: 2x;
+            border-radius: 10px;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .dot {
+            height: 25px;
+            width: 25px;
+        / / -webkit-border-radius: 50 %;
+        / / -moz-border-radius: 50 %;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 2px;
+        }
+
+    </STYLE>
+</head>
+<body>
+<div class="output"> Spill terningkast!</div>
+<button type="button">Kast terning</button>
+
+
+<script>
+    const button = document.querySelector("button");
+    const output = document.querySelector(".output");
+    const terningSymboler = [[5], [1, 9], [1, 5, 9], [1, 3, 7, 9], [1, 3, 5, 7, 9], [1, 3, 4, 6, 7, 9]];
+    button.addEventListener("click", function () {
+        let kast = terningKast(6);
+        console.log(kast);
+        let huskeKast = bygger(kast);
+        console.log(output.children[0]);
+        if (output.children[0]) {
+            output.children[0].remove();
+        }
+        output.appendChild(huskeKast);
+
+
+    })
+
+    function bygger(num) {
+        let div = document.createElement("div");
+        let terninger = terningSymboler[num - 1];
+        console.log(terninger);
+        for (x = 1; x < 10; x++) {
+            let span = document.createElement("div");
+            span.setAttribute("class", "dot");
+            if (terninger.includes(x)) {
+                span.classList.add("black");
+            }
+            div.appendChild(span);
+
+        }
+        div.setAttribute("class", "terning");
+        return div;
+
+
+    }
+
+    function terningKast(num) {
+        let terning = Math.floor(Math.random() * num) + 1;
+        return terning;
+
+
+    }
+
+</script>
+
+</body>
+</html>

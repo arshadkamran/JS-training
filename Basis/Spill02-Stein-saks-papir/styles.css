@@ -1,0 +1,16 @@
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic
+https://medium.freecodecamp.org/a-quick-guide-to-styling-buttons-using-css-f64d4f96337f
+*/
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 4px;
+    cursor: pointer;
+}

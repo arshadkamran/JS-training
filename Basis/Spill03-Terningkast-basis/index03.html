@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Terningkast - basis</title>
+    <STYLE>
+        #spiller1, #spiller2 {
+            display: inline-block;
+            width: 200px;
+            height: 140px;
+            border: 1px;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 25px;
+            text-align: center;
+            font-size: 7em;
+        }
+
+        #meldingTilSpillere {
+            width: 550px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        button {
+            padding: 10px;
+            text-emphasis: center;
+            width: 550px;
+
+        }
+
+    </STYLE>
+</head>
+<body>
+<div class="spillerom">
+    <div id="meldingTilSpillere"></div>
+    <div id="spiller1"></div>
+    <div id="spiller2"></div>
+</div>
+<button type="button">Kast terning</button>
+
+
+<script>
+    const button = document.querySelector("button");
+    const spiller1 = document.querySelector("#spiller1");
+    const spiller2 = document.querySelector("#spiller2");
+    const meldingTilSpillere = document.querySelector("#meldingTilSpillere");
+    button.addEventListener("click", function () {
+
+        console.log("den virker");
+        let kast = [terningKast(6), terningKast(6)];
+        let melding;
+
+        if (kast[0] == kast[1]) {
+            melding = "lik terningkast, dermed uavgjort :-)"
+        } else if (kast[0] > kast[1]) {
+            melding = "Spiller 1 vinner!  "
+        } else {
+            melding = "Spiller 2 vinner!  "
+        }
+        meldingTilSpillere.innerHTML = melding;
+
+        console.log(kast);
+        spiller1.innerHTML = kast[0];
+        spiller2.innerHTML = kast[1];
+
+    })
+
+    function terningKast(num) {
+        let terning = Math.floor(Math.random() * num) + 1;
+        return terning;
+
+
+    }
+
+</script>
+
+</body>
+</html>

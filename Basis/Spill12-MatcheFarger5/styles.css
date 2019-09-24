@@ -1,0 +1,18 @@
+.spillerom {
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+
+}
+
+.boks {
+    width: 50%;
+    height: 50%;
+    color: black;
+    text-align: center;
+    display: inline-block;
+}
+
+.aktiv {
+    border: 1px solid red;
+    color: red;

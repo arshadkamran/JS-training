@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matche Farger Spill</title>
+
+    <style>
+        .spillerom {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+
+        }
+
+        .boks {
+            width: 50%;
+            height: 50%;
+            color: black;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .aktiv {
+            border: 1px solid red;
+            color: red;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="melding"> Trykk "Start spill" knappen</div>
+<div class="spillerom"></div>
+<button type="button">Start spill</button>
+
+<script>
+    const spillFarger = ["red", "green", "blue", "yellow"];
+    const melding = document.querySelector(".melding");
+    const spillerom = document.querySelector(".spillerom");
+    const button = document.querySelector("button");
+
+    let spillklikker = [];
+    let brukerKlikker = [];
+    let iSpill = false;
+    let spillNum = 1;
+
+    button.addEventListener("click", function () {
+//            console.log("dette virker så langt!");
+        if (!iSpill) {
+            spiller();
+        }
+
+    })
+
+    window.addEventListener("load", oppsett);
+
+    function spiller() {
+        button.disabled = true;
+        spillklikker = [];
+        brukerKlikker = [];
+        kjøreSekvens();
+
+    }
+
+    function kjøreSekvens() {
+        iSpill = true;
+
+
+    }
+
+    function oppsett() {
+        console.log("siden er lastet!");
+        for (let x = 0; x < 4; x++) {
+            let div = elementFabrikk("div");
+            div.style.background = spillFarger[x];
+            div.classList.add("boks");
+            div.style.opacity = "0.5";
+            div.minFarge = spillFarger[x];
+            div.addEventListener("click", sjekkeSvar);
+            spillerom.appendChild(div);
+        }
+    }
+
+    function sjekkeSvar(e) {
+        if (iSpill) {
+            let element = e.target;
+            console.log(element.minFarge);
+            brukerKlikker.push(element.minFarge);
+            element.style.opacity = "1";
+            setTimeout(function () {
+                element.style.opacity = "0.5";
+            }, 500);
+        }
+        console.log(brukerKlikker);
+    }
+
+    function elementFabrikk(elementType) {
+        let element = document.createElement(elementType);
+        return element;
+    }
+
+
+</script>
+
+</body>
+</html>
