@@ -1,0 +1,2 @@
+Her følger eksempel tekst: 
+som skal leses av javascripot/ node kode
