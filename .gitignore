@@ -1,3 +1,7 @@
+#Temporary files by some applications
+~$*
+#Mac .DS_Store
+.DS_Store
 # Logs
 logs
 *.log
@@ -42,6 +46,11 @@ typings/
 # Optional npm cache directory
 .npm
 
+# node deployment
+node_modules
+dist*
+
+
 # Optional eslint cache
 .eslintcache
 
@@ -59,3 +68,4 @@ typings/
 
 # next.js build output
 .next
+
