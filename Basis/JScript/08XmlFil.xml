@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>  
+<virksomhet> 
+<ansatt id="001" sex="M" age="19">Kari Normann</ansatt> 
+<ansatt id="002" sex="M" age="24">Ola Hermansen</ansatt> 
+<ansatt id="003" sex="M" age="21">Bindu Khan</ansatt> 
+<inntjening> 
+<aar id="2000">100,000</aar> 
+<aar id="2001">140,000</aar> 
+<aar id="2002">200,000</aar> 
+</inntjening> 
+</virksomhet>
