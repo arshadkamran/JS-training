@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tilfelldig Tall Generator</title>
+</head>
+<body>
+<input type="button" value="Generere random nummer både en og to sifret" onclick="tilfelldigTallGenerator()"/>
+
+<script>
+
+    function tilfelldigTallGenerator() {
+
+        const tilfelldigTallEnSiffer = Math.floor(10 * Math.random());
+        const tilfelldigTallToSiffer = Math.floor(100 * Math.random());
+
+
+        document.write(tilfelldigTallEnSiffer  + "<br>");
+        console.log(tilfelldigTallEnSiffer);
+        document.write(tilfelldigTallToSiffer + "<br>");
+        console.log(tilfelldigTallToSiffer);
+
+    }
+
+</script>
+
+</body>
+</html>
