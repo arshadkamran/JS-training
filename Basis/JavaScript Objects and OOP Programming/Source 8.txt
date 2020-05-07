@@ -1,0 +1,12 @@
+<script>
+function Person(firstName, lastName) {
+this.first = firstName;
+this.last = lastName
+this.greeting = function () {
+console.log(`Hello ${this.first} ${this.last}`)
+};
+}
+const tester = new Person('Laurence', 'Svekis');
+console.log(tester.first);
+tester.greeting();
+</script>

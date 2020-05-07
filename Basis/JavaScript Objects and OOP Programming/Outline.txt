@@ -1,0 +1,49 @@
+JavaScript Objects and OOP Programming with JavaScript
+Use objects to create amazing things with JavaScript power up your applications OOP JavaScript coding
+Source Code and resources are included to get you started quickly.
+
+Learn more about JavaScript and how JavaScript ES6 can be applied to create amazing JavaScript projects.  Course is loaded with JavaScript Examples and perfect JavaScript for Beginners to learn more about JavaScript Online.  Writing JavaScript Code using vanilla JavaScript - no libraries no tricks this JavaScript tutorial the JavaScript Course will walk you through creating your own JavaScript code and provide many JavaScript Code Snippets for use in JavaScript programming.  Learn JavaScript with this step by step JavaScript Course.
+
+JavaScript objects are at the core of JavaScript
+
+SOURCE CODE is included every step of the way
+
+Downloadable PDF guide to help guide you through the lessons.
+
+Learning how to use objects and construct objects can increase what you can do with JavaScript
+
+Course is designed to highlight using JavaScript  - JavaScript IS A Prerequisite TO THIS COURSE *****Beginner JavaScript knowledge is required ***** as the course covers only JavaScript relevant to the using objects and applying objects to object oriented programming.  Also HTML and CSS knowledge is essential as scope of this course is all JavaScript focused.  
+
+No libraries, no shortcuts just learning JavaScript making it DYNAMIC and INTERACTIVE web application.
+
+Course Covers
+
+Creating objects - methods in objects
+
+Using Object to hold information
+
+Use of objects to create a shopping cart
+
+Use of objects to get element information
+
+Object oriented programming
+
+Creating new objects from template
+
+OOP recreate earlier objects
+
+New uses for objects
+
+Dice game made simple with OOP
+
+Shopping cart made with OOP
+
+All this and more
+
+Step by step learning with all steps included.
+
+Along with friendly support in the Q&A to help you learn and answer any questions you may have. 
+
+Try it now you have nothing to lose, comes with a 30 day money back guarantee.  
+
+Start building your own version of the application today!!!!

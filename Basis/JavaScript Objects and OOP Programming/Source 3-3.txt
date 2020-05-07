@@ -1,0 +1,24 @@
+<body>
+    <script>
+        var myObj = {    
+            "people": [      {        
+                "firstName": "Mike"
+                ,         "lastName": "Smith"
+                ,         "age": 30      
+        },        {        
+                "firstName": "John"
+                ,         "lastName": "Jones"
+                ,         "age": 40      
+        }]
+        };  
+        myObj.people.forEach(function (item) {
+            console.log(item.firstName + " " + item.lastName);
+            let div = document.createElement('div');
+            div.innerHTML = `<h3>${item.firstName}</h3>${item.lastName}`;
+            div.style.border = "1px solid #ddd";
+            div.style.display = "inline-block";
+            div.style.width = "100px";
+            document.body.appendChild(div);
+        })
+    </script>
+</body>
